@@ -1,21 +1,15 @@
 const wrapper = document.querySelector(".wrapper");
 const question = document.querySelector(".question");
+const gif = document.querySelector(".gif");
 const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
-yesBtn.addEventListener("click", (e) => {
-  const gif = document.createElement("img");
+yesBtn.addEventListener("click", ( ) => {
+  question.innetHTML = "Aaaaa, i like u too";
   gif.src = "https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp";
-  
-  wrapper.appendChild(gif);
-  
-  setTimeout(() => {
-    gif.remove();
-    question.innerHTML = "Aaaaa, I like you too! 🎉";
-  }, 3000);
 });
 
-noBtn.addEventListener("mouseover", (e) => {
+noBtn.addEventListener("mouseover", ( ) => {
   const noBtnRect = noBtn.getBoundingClientRect();
   const maxX = window.innerWidth - noBtnRect.width;
   const maxY = window.innerHeight - noBtnRect.height;
