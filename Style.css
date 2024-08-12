@@ -15,9 +15,13 @@ body {
 }
 
 .gif {
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
 }
+
+.img {
+    height: 100%;
+    width: 100%
 
 h2 {
     text-align: center;
