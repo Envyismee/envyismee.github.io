@@ -10,14 +10,9 @@ yesBtn.addEventListener("click", ( ) => {
     "https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp";
 });
 
-noBtn.addEventListener("mouseover", ( ) => {
-  const noBtnRect = noBtn.getBoundingClientRect();
-  const maxX = window.innerWidth - noBtnRect.width;
-  const maxY = window.innerHeight - noBtnRect.height;
+noBtn.addEventListener("click", ( ) => {
+  question.innerHTML = "No, you should like me"
+  img.src =
+    "https://raw.githubusercontent.com/Envyismee/img/main/FB_IMG_1721918073142.jpg"
   
-  const randomX = Math.floor(Math.random() * maxX);
-  const randomY = Math.floor(Math.random() * maxY);
-  
-  noBtn.style.left = randomX + "px";
-  noBtn.style.top = randomY + "px";
 });
